@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS hello world example</title>
+    <!-- embedded JS <script>alert('hello world!')</script> -->
+    <!-- external js -->
+    <!-- more than external files will be interpreted in order -->
+    <!-- <script src="app.js"></script>
+    <script src="service.js"></script> -->
+</head>
+
+<body>
+    <!-- putting them here to avoid the blank page appears  -->
+    <script src="app.js"></script>
+    <script src="service.js"></script>
+
+    <!-- async / defer attributes -->
+    <!-- the 2 files will be fetched in parallel -->
+    <script async src="service.js"></script>
+    <script async src="app.js"></script>
+
+    <!-- defer allow web browser to excute the js file after the document has been parsed  -->
+</body>
+
+</html>
